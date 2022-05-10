@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dom</title>
+        <script defer src="./js/main2.js"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- Contenido a renderizar -->
+        <div class="container">
+            <div>
+                <h1 class="text-center">Bienvenido a Cinemex</h1>
+            </div>
+            <div>
+                <h2>Cartelera</h2>
+                <a id="enlaceFacebook" href="http://facebook.com/" target="_blank" rel="noopener noreferrer">facebook</a>
+                <!-- Elemento padre Cartelera -->
+                <div id="elementoPadre" class="row">
+                </div>
+            </div>
+            <!-- Begin Formulario -->
+            <div id="Formulario" class="m-5">
+                <h2>Favor de llenar todos los datos</h2>
+                <form class="d-flex flex-column">
+                    <label>
+                        <input
+                            id="FormularioNombre"
+                            type="text"
+                            placeholder="Nombre"
+                            class="form-control mb-2"
+                        />
+                    </label>
+                    <label>
+                        <input
+                            id="FormularioPelicula"
+                            type="text"
+                            placeholder="Pelicula"
+                            class="form-control mb-2"
+                        />
+                    </label>
+                    <label>
+                        <input
+                            id="FormularioCantidadBoletos"
+                            type="number"
+                            placeholder="Cantidad de Boletos"
+                            class="form-control mb-2"
+                        />
+                    </label>
+                    <label>
+                        <input
+                            id="FormularioMonto"
+                            type="text"
+                            placeholder="Monto"
+                            class="form-control mb-2"
+                        />
+                    </label>
+                    <label>
+                        <input
+                            id="FormularioTotal"
+                            type="text"
+                            placeholder="Total"
+                            class="form-control mb-2"
+                            disabled
+                        />
+                    </label>
+                    <button
+                        id="FormularioSubmit"
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Modal Bootstrap -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="modalBody" class="modal-body">
+                    aqui va renderiado el js
+                </div>
+                <div class="modal-footer">
+                  <button id="cerrarModal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button id="comprarBoleto" type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Enlaces Script -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
