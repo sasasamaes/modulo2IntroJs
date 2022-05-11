@@ -122,5 +122,6 @@ const crearCarritoCompra = (item) => {
         <td>${carritoCompras[key].cantidad}</td>
         `;
         tablaProductos.appendChild(elementoHijo);
+        
     }
 };
