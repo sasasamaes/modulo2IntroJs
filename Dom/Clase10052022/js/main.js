@@ -1,3 +1,5 @@
+//Mi fork Sergio Gil
+
 window.addEventListener("DOMContentLoaded", () => {
     crearHtml();
     escuchaEventoComprar();
