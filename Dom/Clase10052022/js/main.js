@@ -114,5 +114,13 @@ const crearCarritoCompra = (item) => {
     console.log(carritoCompras);
     const tablaProductos = document.getElementById("tablaProductos");
     tablaProductos.innerHTML = "";
-
+    for (const key in carritoCompras) {
+        const elementoHijo = document.createElement("tr");
+        elementoHijo.innerHTML = `
+        <td>${carritoCompras[key].nombre}</td>
+        <td>${carritoCompras[key].precio}</td>
+        <td>${carritoCompras[key].cantidad}</td>
+        `;
+        tablaProductos.appendChild(elementoHijo);
+    }
 };
